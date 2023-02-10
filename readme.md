@@ -43,4 +43,4 @@ http://localhost:3000/api-docs in your browser once you have the server running.
 
 ## Limitations
 
-The user is predifined at the top level app component for the purpose of this assignment. Only the predefined user is able to manage their messages because this username is a parameter for the API call. However this is only a mock app, as the assignment specifically outlined the 3 pages so auth is not implemented.
+The user is predefined at the top level client app.js component for the purpose of this assignment. Only the predefined user is able to manage their messages because this username is a parameter for the API call. However this is only a mock app, as the assignment specifically outlined the 3 pages so auth is not implemented.
