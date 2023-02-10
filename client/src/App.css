@@ -1,0 +1,43 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: ridge;
+  margin-bottom: 5rem;
+}
+.navbar-center > h1 {
+  margin: 0;
+}
+.message-list {
+  padding: 0rem;
+  border: groove;
+}
+.message-list > li {
+  border: groove;
+}
+.message-list > li > a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: black;
+}
+.message-item > * {
+  text-align: start;
+}
+.message-component {
+  text-align: start;
+}
+.message-component > h1 {
+  border-bottom: ridge;
+}

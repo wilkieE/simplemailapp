@@ -1,0 +1,114 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Message App API",
+    "description": "A RESTful API for managing messages for a user in a messaging app",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/{user}/messages": {
+      "get": {
+        "description": "Retrieve a specific user and their messages",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the user"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful retrieval of messages",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "messages": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "integer",
+                        "description": "The message ID"
+                      },
+                      "subject": {
+                        "type": "string",
+                        "description": "The subject of the message"
+                      },
+                      "content": {
+                        "type": "string",
+                        "description": "The content of the message"
+                      },
+                      "isRead": {
+                        "type": "boolean",
+                        "description": "Indicates if the message has been read"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    },
+    "/{user}/messages/{id}": {
+      "patch": {
+        "description": "Update a specific user's messages",
+        "parameters": [
+          {
+            "name": "user",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the user"
+          },
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "integer",
+            "description": "The message ID"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful update of messages",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "description": "The message ID"
+                  },
+                  "subject": {
+                    "type": "string",
+                    "description": "The subject of the message"
+                  },
+                  "content": {
+                    "type": "string",
+                    "description": "The content of the message"
+                  },
+                  "isRead": {
+                    "type": "boolean",
+                    "description": "Indicates if the message has been read"
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "User not found"
+          }
+        }
+      }
+    }
+  }
+}
