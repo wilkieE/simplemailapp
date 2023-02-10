@@ -1,6 +1,6 @@
 # Simple Mail Application
 
-A simple messaging app that allows a predefined user to manage their messages. The frontend of the application is built with React using a Vite template and the backend is built with Node.js and Express.  
+A simple messaging app that allows a predefined user to manage their messages. The frontend of the application is built with React using a Vite template and the backend is built with Node.js and Express.
 
 [Live Demo](https://simplemailapp.vercel.app/)
 
